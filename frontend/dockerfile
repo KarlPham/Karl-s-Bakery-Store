@@ -1,0 +1,20 @@
+# Use an official Node.js image as the base image
+FROM node:22
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Copy only the package.json and package-lock.json first
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application files to the container (excluding node_modules with .dockerignore)
+COPY . .
+
+# Expose port 3000 for the frontend
+EXPOSE 3000
+
+# Run the Vite development server
+CMD ["npm", "run", "dev"]

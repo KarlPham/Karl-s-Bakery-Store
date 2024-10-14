@@ -1,0 +1,5 @@
+# Ignore node_modules directory to prevent it from being copied
+node_modules
+# Optionally ignore other files that shouldn't be copied into the Docker container
+dist
+*.log

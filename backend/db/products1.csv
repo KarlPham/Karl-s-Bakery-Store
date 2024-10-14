@@ -1,0 +1,10 @@
+name,price,image,shortDescription,longDescription
+Brownie,5,image/brownie.png,Fudgy matcha and chocolate brownie,"Decadent dessert made with chocolate or cocoa, resulting in a dense, fudgy texture. You can order extra topping like nuts or chocolate chips"
+Cupcake,4,image/cupcake.png,"A small, frosted cake in a paper liner","Individual-sized cakes baked in paper liners. They are frosted with buttercream, ganache, and decorated with sprinkles "
+Sunflower cookie,11,image/sunflowerCookie.png,"Thin, crisp butter cookies","A delicate, crispy cookie with a light buttery flavor shaped like a sunflower with chocolate chips and almond toppings"
+Donut,9,image/donut.png,"A fried, ring-shaped pastry","Sweet, fried pastries typically shaped like rings or filled with cream. They come in various flavors and toppings such as sugar glaze, sprinkles, and chocolate, offering a soft, fluffy texture"
+Egg tart,5,image/eggTart.png,A creamy custard-filled pastry,"A type of pastry filled with a smooth, sweet egg custard. Originating from Hong Kong and Macau, they feature a flaky, buttery crust that contrasts perfectly with the soft custard inside"
+Christmas cookie,4,image/christmasCookie.png,Festively decorated holiday cookies,"Treats baked during the holiday season, shaped like flowers and Chrismas trees. They are decorated with colorful icing and sprinkles"
+Marble cookie,4,image/marbleCookie.png,Swirled vanilla and chocolate cookie,"Visually striking treats made by swirling vanilla and chocolate doughs together, creating a marbled effect. These cookies offer a delightful combination of two flavors in one bite, making them a popular choice for those who love both chocolate and vanilla"
+Chest cookie,4,image/chestCookie.png,A chest-shaped cookie with a hidden filling,"Cookies shaped like treasure chests and often contain a surprise filling, such as chocolate, fruit, or cream. Their unique appearance and hidden contents make them a fun and creative treat, perfect for special occasions"
+Chocolate chip cookie,5,image/chocoCookie.png,A classic cookie with chocolate chips,Universally loved treat made from a buttery dough filled with chocolate chips.
