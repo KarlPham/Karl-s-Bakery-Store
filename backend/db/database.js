@@ -38,8 +38,7 @@ const createOrdersTable = `
     name TEXT NOT NULL,
     creditCard TEXT NOT NULL,
     shippingAddress TEXT NOT NULL,
-    sum NUMERIC NOT NULL,
-    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    sum NUMERIC NOT NULL
   );
 `;
 

@@ -43,7 +43,7 @@ function CartList() {
 
   return (
     <div className="min-h-screen bg-blue-50 p-8">
-      <div className="max-w-4xl mx-auto bg-black border border-pink-500 rounded-lg shadow-lg p-6">
+      <div className="max-w-4xl mx-auto bg-white border border-pink-500 rounded-lg shadow-lg p-6">
         <h2 className="text-3xl font-bold mb-6">My Cart</h2>
 
         {error && <p className="text-red-500">{error}</p>}

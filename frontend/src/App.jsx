@@ -10,9 +10,9 @@ import EndOrder from './components/EndOrder';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="min-h-screen min-w-full flex flex-col">
         <Header />       
-        <main className="container pt-24 min-w-full mt-100">
+        <main className="flex-grow container pt-24 mx-auto px-6">
           <Routes>
             <Route path="/" element={<ProductList />} />
 
