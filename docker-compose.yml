@@ -5,9 +5,6 @@ services:
       context: ./frontend  # Path to the frontend folder
     ports:
       - "3000:3000"  # Expose the frontend on port 3000
-    volumes:
-      - ./frontend:/usr/src/app  # Sync frontend code with container
-      - /usr/src/app/node_modules
     depends_on:
       - backend  # Ensure backend is up before frontend starts
    
@@ -21,9 +18,6 @@ services:
       - DATABASE_URL=postgres://postgres:password@db:5432/mydb  # Use "db" as the hostname
     depends_on:
       - db  # Wait for the db service to start
-    volumes:
-      - ./backend:/usr/src/app
-      - /usr/src/app/node_modules  
 
   db:
     image: postgres:17
