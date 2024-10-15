@@ -2,6 +2,21 @@
 
 ![alt text](./images/image.png)
 
+![alt text](./images/image1.png)
+
+![alt text](./images/image2.png)
+
+![alt text](./images/image3.png)
+
+**How To Run**
+
+
+Type ```docker compose up --build``` in terminal
+
+Frontend port:http://localhost:3000/
+
+Backend port:http://localhost:5000/
+
 **Database**
 
 - Structure of the database:

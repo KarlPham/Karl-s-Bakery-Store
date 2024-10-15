@@ -104,7 +104,7 @@ function Checkout() {
   return (
     <div className="checkout-form border border-pink-500 rounded-lg p-6 mx-auto">
       <Link to="/cart" className="text-blue-500 font-bold mb-4 block">{'< Back to Cart'}</Link>
-      <h2 className="text-3xl font-bold mb-6">Check</h2>
+      <h2 className="text-3xl font-bold mb-6">Check Out</h2>
       <h3 className="text-2xl mb-4">Total Cost: ${totalCost.toFixed(2)}</h3>
 
       <form onSubmit={handleSubmit} className="space-y-4">
