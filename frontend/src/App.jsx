@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />       
-        <main className="container mx-auto p-4 pt-24 w-screen">
+        <main className="container pt-24 min-w-full mt-100">
           <Routes>
             <Route path="/" element={<ProductList />} />
 

@@ -22,7 +22,8 @@ services:
     depends_on:
       - db  # Wait for the db service to start
     volumes:
-      - ./backend:/usr/src/app  # Sync the backend folder with the container
+      - ./backend:/usr/src/app
+      - /usr/src/app/node_modules  
 
   db:
     image: postgres:17

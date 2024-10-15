@@ -13,14 +13,16 @@ function ProductList() {
   }, []);
 
   return (
-    <div className="container pt-24 mx-auto p-6 px-20">
-      <h1 className="text-3xl font-bold mb-6 text-center">Our Products</h1>
+    <div className="flex justify-center items-center min-h-screen min-w-full">
+    <div className="container pt-50 mx-auto p-6 px-20 items-center pl-800">
+      <h1 className="text-3xl font-bold mb-6 text-center">Our Product </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {products.map((product) => (
           <ProductItem key={product.productid} product={product} />
         ))}
       </div>
     </div>
+  </div>
   );
 }
 
