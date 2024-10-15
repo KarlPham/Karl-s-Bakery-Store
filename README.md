@@ -10,6 +10,7 @@
 
 **How To Run**
 
+Clone my project at: https://github.com/KarlPham/Karl-s-Bakery-Store.git
 
 Type ```docker compose up --build``` in terminal
 
