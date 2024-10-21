@@ -3,7 +3,7 @@ import React from 'react';
 function CartItem({ item, onItemDeleted }) {
   
   const handleDelete = () => {
-    fetch(`http://localhost:5000/api/cart/${item.cartitemid}`, {
+    fetch(`http://localhost/api/cart/${item.cartitemid}`, {
       method: 'DELETE',
     })
       .then((response) => response.json())
@@ -24,7 +24,7 @@ function CartItem({ item, onItemDeleted }) {
     <div className="flex justify-between items-center mb-4 border-b pb-4">
       <div className="flex items-center">
         <img
-          src={`http://localhost:5000/${item.image}`}
+          src={`http://localhost/${item.image}`}
           alt={item.name}
           className="w-16 h-16 object-cover rounded-lg mr-4"
         />

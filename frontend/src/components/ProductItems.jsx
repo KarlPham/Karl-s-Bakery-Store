@@ -5,7 +5,7 @@ function ProductItem({ product }) {
   return (
     <div className="product-card border border-pink-500 rounded-lg shadow-lg p-4">
       <img
-        src={`http://localhost:5000/${product.image}`}
+        src={`http://localhost/${product.image}`}
         alt={product.name}
         className="w-full h-48 object-cover mb-4 rounded-lg"
       />

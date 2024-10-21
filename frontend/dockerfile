@@ -13,5 +13,7 @@ RUN npm install
 # Copy the rest of the application files to the container (excluding node_modules with .dockerignore)
 COPY . .
 
+EXPOSE 3000
+
 # Run the Vite development server
 CMD ["npm", "run", "dev"]

@@ -9,7 +9,7 @@ function CartList() {
 
   useEffect(() => {
     // Fetch cart items from the backend
-    fetch('http://localhost:5000/api/cart')
+    fetch('http://localhost/api/cart')
       .then((response) => response.json())
       .then((data) => {
         if (Array.isArray(data)) {

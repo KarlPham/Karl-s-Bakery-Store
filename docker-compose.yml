@@ -1,34 +1,37 @@
-
+version: '3'
 services:
+
+  nginx:
+    build:
+      context: ./nginx  # Assuming you have a Dockerfile in ./nginx
+    ports:
+      - "80:80"  # Expose Nginx on port 80 for external access
+    depends_on:
+      - frontend
+      - backend
+
   frontend:
     build:
-      context: ./frontend  # Path to the frontend folder
-    ports:
-      - "3000:3000"  # Expose the frontend on port 3000
+      context: ./frontend  # Build the frontend from the frontend directory
     depends_on:
-      - backend  # Ensure backend is up before frontend starts
-   
-      
+      - backend  # Wait for the backend to start before frontend
+
   backend:
     build:
-      context: ./backend  # Path to the backend folder
-    ports:
-      - "5000:5000"  # Expose the backend on port 5000
+      context: ./backend  # Build the backend from the backend directory
     environment:
-      - DATABASE_URL=postgres://postgres:password@db:5432/mydb  # Use "db" as the hostname
+      - DATABASE_URL=postgres://postgres:password@db:5432/mydb  # Database connection string
     depends_on:
-      - db  # Wait for the db service to start
-
+      - db  # Ensure the database starts before the backend
+    
   db:
-    image: postgres:17
+    image: postgres:17  # Use official PostgreSQL image
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
       POSTGRES_DB: mydb
     volumes:
-      - pgdata:/var/lib/postgresql/data  # Persist data
-    ports:
-      - "5432:5432"  # Expose PostgreSQL on port 5432 for external access
+      - pgdata:/var/lib/postgresql/data  # Persist database data in a Docker volume
 
 volumes:
-  pgdata:
+  pgdata:  # Define the persistent volume for PostgreSQL

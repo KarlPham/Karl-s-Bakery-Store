@@ -14,7 +14,7 @@ function Checkout() {
 
   // Fetch cart items from the backend
   useEffect(() => {
-    fetch('http://localhost:5000/api/cart')
+    fetch('http://localhost/api/cart')
       .then((response) => response.json())
       .then((data) => {
         if (Array.isArray(data)) {
@@ -53,7 +53,7 @@ function Checkout() {
 
   // Function to clear the cart after placing the order
   const clearCart = () => {
-    fetch('http://localhost:5000/api/cart/delete', {
+    fetch('http://localhost/api/cart/delete', {
       method: 'DELETE',
     })
       .then((response) => response.json())
@@ -78,7 +78,7 @@ function Checkout() {
       };
 
       // Send the order to the backend
-      fetch('http://localhost:5000/api/orders/add', {
+      fetch('http://localhost/api/orders/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

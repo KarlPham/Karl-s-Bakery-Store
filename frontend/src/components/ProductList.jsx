@@ -6,7 +6,7 @@ function ProductList() {
 
   useEffect(() => {
     // Fetch products from the backend
-    fetch('http://localhost:5000/api/products')
+    fetch('http://localhost/api/products')
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error('Error fetching products:', error));

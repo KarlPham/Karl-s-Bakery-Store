@@ -9,7 +9,7 @@ function ProductAddCart() {
 
   useEffect(() => {
     // Fetch product data by productId from the backend
-    fetch(`http://localhost:5000/api/products/${productId}`)
+    fetch(`http://localhost/api/products/${productId}`)
       .then((response) => response.json())
       .then((data) => setProduct(data))
       .catch((error) => console.error('Error fetching product:', error));
@@ -21,7 +21,7 @@ function ProductAddCart() {
 
   // Handle Add to Cart button click
   const handleAddToCart = () => {
-    fetch('http://localhost:5000/api/cart/add', {
+    fetch('http://localhost/api/cart/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ function ProductAddCart() {
 
       <div className="flex flex-col lg:flex-row items-start lg:items-center ">
         <img
-          src={`http://localhost:5000/${product.image}`}
+          src={`http://localhost/${product.image}`}
           alt={product.name}
           className="w-full lg:w-1/3 h-48 object-cover mb-4 rounded-lg"
         />
